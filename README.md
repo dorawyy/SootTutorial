@@ -55,7 +55,7 @@ In this chapter, you learn how to insert code into Android apps (without having 
 * `./gradlew run --args="AndroidClassInjector"`: Create a new class from scratch and inject it to the  [Numix Calculator](demo/Android/calc.apk).
 
 The instrumented APK is located in `demo/Android/Instrumented`. You need to sign it in order to install on an Android device:
-```aidl
+```shell
 cd ./demo/Android
 ./sign.sh Instrumented/calc.apk key "android"
 adb install -r -t Instrumented/calc.apk
